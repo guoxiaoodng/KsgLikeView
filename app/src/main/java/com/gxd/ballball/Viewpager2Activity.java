@@ -1,11 +1,12 @@
-package com.ksg.likeview;
+package com.gxd.ballball;
 
 import android.os.Bundle;
 
-import com.ksg.likeview.adapter.Viewpager2Adapter;
+import com.gxd.ballball.adapter.Viewpager2Adapter;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
+import com.gxd.ballball.R;
 
 /**
  * @ClassName: Viewpager2Activity

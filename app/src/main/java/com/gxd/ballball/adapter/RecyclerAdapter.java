@@ -1,4 +1,4 @@
-package com.ksg.likeview.adapter;
+package com.gxd.ballball.adapter;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.kaisengao.likeview.like.KsgLikeView;
-import com.ksg.likeview.R;
+import com.gxd.ballball.R;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatTextView;

@@ -1,4 +1,4 @@
-package com.ksg.likeview;
+package com.gxd.ballball;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -6,6 +6,8 @@ import android.os.Looper;
 import android.view.View;
 
 import com.kaisengao.likeview.like.KsgLikeView;
+import com.gxd.ballball.utils.ToastUtils;
+import com.gxd.ballball.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -43,6 +45,7 @@ public class NormalActivity extends AppCompatActivity {
         this.findViewById(R.id.single).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ToastUtils.showToast(NormalActivity.this, "宝宝我爱你！");
                 mLikeView.addFavor();
             }
         });
@@ -54,9 +57,17 @@ public class NormalActivity extends AppCompatActivity {
                 if (selected) {
                     mHandler.removeCallbacks(mLikeRunnable);
                 } else {
+                    ToastUtils.showToast(NormalActivity.this, "宝宝我真的爱你！");
                     mHandler.postDelayed(mLikeRunnable, 100);
                 }
                 view.setSelected(!selected);
+//                ToastUtils.showShort("宝宝我真的爱你！");
+            }
+        });
+        this.findViewById(R.id.iv_back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }

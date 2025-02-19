@@ -1,9 +1,9 @@
-package com.ksg.likeview;
+package com.gxd.ballball;
 
 import android.os.Bundle;
 
-import com.ksg.likeview.adapter.RecyclerAdapter;
-
+import com.gxd.ballball.adapter.RecyclerAdapter;
+import com.gxd.ballball.R;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
